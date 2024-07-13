@@ -2,8 +2,9 @@
 
 # Download Ubuntu 20.04
 FROM ubuntu:20.04
-# Give maintainer info
-MAINTAINER "Mike Ahmedov"
+# Label
+LABEL description = "This is my first image" \
+      maintainer  = "Mike Ahmedov"
 # Update and Install Telnet
 RUN apt-get update -y
 RUN apt-get install telnet -y
