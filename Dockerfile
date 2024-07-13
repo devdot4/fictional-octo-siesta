@@ -3,8 +3,8 @@
 # Download Ubuntu 20.04
 FROM ubuntu:20.04
 # Label
-LABEL  description "This is my first image" \
-       maintainer  "Mike Ahmedov"
+LABEL  description="This is my first image" \
+       maintainer="Mike Ahmedov"
 # Update and Install Telnet
 RUN    DEBIAN_FRONTEND=noninteractive apt-get update -y         && \
        DEBIAN_FRONTEND=noninteractive apt-get install telnet -y && \
