@@ -11,3 +11,6 @@ RUN    DEBIAN_FRONTEND=noninteractive apt-get update -y         && \
        DEBIAN_FRONTEND=noninteractive apt-get install apache2 -y
 # Add port 80
 EXPOSE 80
+
+# Run command
+CMD ["apache2ctl", "-D", "FOREGROUND"]
